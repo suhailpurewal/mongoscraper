@@ -21,3 +21,10 @@ float: right;
     height:200px;
     font-size: 18px;
  } 
+
+.jumbotron{
+    /* width: 50%;
+    background-image: url("../img/itworks.jpg"); */
+    color: black;
+    /* background-size: auto; */
+}

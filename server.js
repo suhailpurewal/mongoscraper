@@ -5,7 +5,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var exphbs  = require('express-handlebars');
 var PORT = 3000;
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongodstorage";
+// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongodstorage";
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
