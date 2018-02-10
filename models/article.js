@@ -1,6 +1,10 @@
 var mongoose = require('mongoose');
 var uniqueValidator = require('mongoose-unique-validator');
 var Schema = mongoose.Schema;
+mongoose.Promise = Promise;
+mongoose.connect(MONGODB_URI, {
+  useMongoClient: true
+});
 
 
 var ArticleSchema = new Schema({
