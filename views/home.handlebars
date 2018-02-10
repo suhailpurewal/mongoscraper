@@ -1,0 +1,38 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/home">Mongo Scraper</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      {{!-- <li class="nav-item">
+        <a class="nav-link" href="/saved">Saved Articles</a>
+      </li> --}}
+      <li class="nav-item">
+        <a class="btn btn-danger" href="/home">Scrape New Articles</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <h1 class="display-4">Mongo Scraper</h1>
+  <p class="lead">This app scrapes r/ProgrammerHumor for the current trending posts and allows you to make notes</p>
+  <hr class="my-4">
+  <p>Utilize this to track / share funnies with your friends</p>
+</div>
+
+<div class="row">
+  <div class="col-md-5" id="funnies">
+    <ul class="list-group" id="articles"></ul>
+  </div>
+  <div class="col-md-5" id="notes">
+    
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="../assets/javascript/app.js"></script>
